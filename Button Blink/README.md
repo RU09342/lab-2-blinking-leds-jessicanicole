@@ -1,21 +1,13 @@
 # Button Blink
-Now that you have looked at blinking the LED from some built in delay, but what if we wanted to control the state of the LED by a button? You may think "Why would I need a Microcontroller to perform the job of a switch?". And that is where you come in. The bare minimum for this part of the lab is to essentially replicate a switch with your development board.
+ Creator: Jessica Wozniak
+ Created: September 13, 2017
+ Last updated: September 23, 2017
+ 
+# Basic Program Capabilities
+These programs were created to blink an LED by using a button five different development boards : MSP430FR2311, MSP430FR5994, MSP430FR6989, MSP430F5529 and, MSP430G2553. The first set of codes were using the button as a simple switch. When the button was pressed, the LED was on and when the button was not pressed, the LED was off. The codes were the same for all of the boards, with the exception of pin numbers, and on the MSP430FR boards the line "PM5CTL0 &= ~LOCKLPM5" has to be present to disable high impedance mode. The LED pin had to be set as output and the button pin had to be set as an input.
+The next set of codes were made to have the led blinking when the button was not pressed and the LED to be off when the button was pressed. It was simple to go from the first code to this code. I essentially used the code from my simple blink, and implemented that within the "if" statement. 
 
-# YOU NEED TO CREATE THE FOLLOWING FOLDERS
-* MSP430G2553
-* MSP430F5529
-* MSP430FR2311
-* MSP430FR5994
-* MSP430FR6989
+# Extra Work 
 
-## README
-Remember to replace this README with your README once you are ready to submit. I would recommend either making a copy of this file or taking a screen shot. There might be a copy of all of these README's in a folder on the top level depending on the exercise.
 
-## Extra Work
-What can we do to make this a little bit more worthy of needing a microcontroller.
-
-### Button Based Speed Control
-Much like the UART controlled speed, what if you could cycle between speeds based on a button press? The speed could progress through a cycle of "Off-Slow-Medium-Fast" looping back when you hit the end.
-
-### Color Change
-What if upon a button press, the LED which was blinking changed. Some of the development boards contain two LEDs, so you could swap between a Red and a Green LED.
+ 
