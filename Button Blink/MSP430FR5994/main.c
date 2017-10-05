@@ -5,8 +5,8 @@
 
 #include <msp430FR5994.h>
 
-#define BUTTON BIT6
-#define LED1 BIT0
+#define BUTTON BIT6  //defines BUTTON as BIT6
+#define LED1 BIT0   //defines LED as BIT0
 
 void main(void)
 {
