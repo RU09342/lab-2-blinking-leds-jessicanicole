@@ -1,25 +1,23 @@
 # Multiple Blink
-Now that we have blinked at least 1 LED, what about blinking multiple LEDS at the same time? The minimum that you need to develop is blinking at least two LEDs at two different rates. Although I am not going to give you a speed, you should probably pick a rate which is visible to a standard human. I really hope that you take this further and perform some of the extra work for this part of the lab exercise.
+### Creator: Jessica Wozniak
+### Created: Septeber 13, 2017
+### Last updated: September 23, 2017
 
-
-# YOU NEED TO CREATE THE FOLLOWING FOLDERS
-* MSP430G2553
+## Compatability:
 * MSP430F5529
 * MSP430FR2311
 * MSP430FR5994
 * MSP430FR6989
+* MSP430G2553
 
-## README
-Remember to replace this README with your README once you are ready to submit. I would recommend either making a copy of this file or taking a screen shot. There might be a copy of all of these README's in a folder on the top level depending on the exercise.
+# Program Description
+The Multiple Blink Program was made to blink two LEDS at different rates. LED1 (P1.0) was the same on all five board. As for LED2 each board was different:
+* MSP430F5529: P4.7 
+* MSP430FR2311: P2.0
+* MSP430FR5994: P1.1
+* MSP430FR6989: P9.7
+* MSP430G2553: P1.6
 
-## Extra Work
-When you take a look at the development boards, you are limited to what is built into the platform.
+The remainder of the code was the same for all boards. Each LED was set as an output. Two ints were declared: count and count1. Within an infinite loop, two if statements were used to see if count and count1 were less than or equal to a chosen value. I chose to make the two numbers 15000 and 30000. Each int was incremented at the end of the while loop. When This allowed for the LEDs to blink at different rates.
 
-### Even More LEDs
-Since up to this point you should have hopefully noticed that you are simply just controlling each pin on your processor. So... what is keeping you from putting an LED on each pin? Can you actually control the speed of each of these LEDs?
-
-### Patterned Lights
-If you can control a ton of LEDs, what is keeping you from having a little fun? Why not try and make something like a moving face or other moving object in lights. *CAUTION* I would only do this if you have finished the rest of the lab.
-
-### UART Pattern Control
-If you have been using UART, could you set which LEDs are on or off based off some UART command? Would you want to send an Array over UART such as [1 0 1 0] or would you want to send a byte that corresponds to the status? Can you not only say which LEDs are on, but also tell them to blink at a particular rate if they were on (so LED1 Blink every 100ms)?
+# Extra Work
