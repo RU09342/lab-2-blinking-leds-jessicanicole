@@ -3,6 +3,9 @@
 ### Created: Septeber 13, 2017
 ### Last updated: September 23, 2017
 
+##Libraries Used
+* <msp430.h>
+
 ## Compatability:
 * MSP430F5529
 * MSP430FR2311
@@ -18,6 +21,4 @@ The Multiple Blink Program was made to blink two LEDS at different rates. LED1 (
 * MSP430FR6989: P9.7
 * MSP430G2553: P1.6
 
-The remainder of the code was the same for all boards. Each LED was set as an output. Two ints were declared: count and count1. Within an infinite loop, two if statements were used to see if count and count1 were less than or equal to a chosen value. I chose to make the two numbers 15000 and 30000. Each int was incremented at the end of the while loop. When This allowed for the LEDs to blink at different rates.
-
-# Extra Work
+The remainder of the code was the same for all boards. Each LED was set as an output. Two ints were declared: count and count1. Within an infinite loop, two if statements were used to see if count and count1 were less than or equal to a chosen value. I chose to make the two values 15000 and 30000. Each int was incremented at the end of the while loop. When This allowed for the LEDs to blink at different rates.
