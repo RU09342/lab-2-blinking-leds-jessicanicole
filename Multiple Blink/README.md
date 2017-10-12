@@ -1,7 +1,7 @@
 # Multiple Blink
-### Creator: Jessica Wozniak
-### Created: Septeber 13, 2017
-### Last updated: September 23, 2017
+* Creator: Jessica Wozniak
+* Created: Septeber 13, 2017
+* Last updated: September 23, 2017
 
 ## Libraries Used
 * <msp430.h>
