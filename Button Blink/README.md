@@ -13,6 +13,7 @@
 * MSP430FR6989
 * MSP430G2553
 
+## Differences between Boards
 * All MSP430FR need this line of code " PM5CTL0 &= ~LOCKLPM5; " to disable high impedance mode.
 * BUTTON1 pins
 ** MSP430F5529: P2.1
