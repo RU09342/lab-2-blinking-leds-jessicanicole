@@ -1,3 +1,8 @@
+//Button Blink Color Change  MSP430FR2311
+//Jessica Wozniak
+//Created: 9/15/17
+//Last updated: 10/1/17
+
 #include <msp430fr2311.h>
 
 #define BUTTON BIT1
